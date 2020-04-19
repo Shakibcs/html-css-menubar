@@ -1,0 +1,17 @@
+*{margin:0;padding:0;}
+main{width:960px;margin:0 auto;display: block;overflow:hidden;background-color: #fff;}
+
+/*mainmenu */
+.mainmenu{background-color: #ddd;min-height: 50px;}
+.mainmenu ul{list-style-type:none;margin:0;padding:0;}
+.mainmenu ul li{float:left;position:relative;border-right: 1px solid #ccc;}
+.mainmenu ul li:last-child{border:none;}
+.mainmenu ul li a{display:block;text-decoration:none;padding:14px 16px;color:#555;}
+.mainmenu ul li a:hover:not(.active){background-color:#F5F5F5;}
+.mainmenu ul li a.active{background: #4C9ED9;}
+
+/*dropdown menu */
+.mainmenu ul li ul{position:absolute;left:-999999px;}
+.mainmenu ul li:hover ul{left:0px;}
+.mainmenu ul li ul li{float:none;width:150px;border-bottom:1px solid #ccc;}
+.mainmenu ul li ul li a{background:#ddd;}
